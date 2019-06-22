@@ -6,7 +6,7 @@ from telethon.tl.functions.photos import UploadProfilePhotoRequest, DeletePhotos
 
 
 def convert_time_to_string(dt):
-    return f"{dt.hour}:{dt.minute:02}"
+    return f"{dt.hour+5}:{dt.minute:02}"
 
 
 def time_has_changed(prev_time):
