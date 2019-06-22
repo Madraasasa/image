@@ -9,7 +9,7 @@ def convert_time_to_string(dt):
     print(dt.hour % 24)
     if (dt.hour+5) % 24 >= 10:
         return f"{dt.hour+5}:{dt.minute:02}"
-    return f"0{dt.hour+5}:{dt.minute:02}"
+    return f"0{(dt.hour+5) % 24}:{dt.minute:02}"
 
 def time_has_changed(prev_time):
     return convert_time_to_string(datetime.datetime.now()) != prev_time
