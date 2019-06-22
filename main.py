@@ -7,7 +7,7 @@ from telethon.tl.functions.photos import UploadProfilePhotoRequest, DeletePhotos
 
 def convert_time_to_string(dt):
     print(dt.hour % 24)
-    if dt.hour % 24 >= 10:
+    if dt.hour+5 % 24 >= 10:
         return f"{dt.hour+5}:{dt.minute:02}"
     return f"0{dt.hour+5}:{dt.minute:02}"
 
