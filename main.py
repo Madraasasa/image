@@ -15,7 +15,7 @@ def time_has_changed(prev_time):
     return convert_time_to_string(datetime.datetime.now()) != prev_time
 
 if __name__ == '__main__':
-    client = TelegramClient('avatar', api_id, api_hash)
+    client = TelegramClient('madridist20', api_id, api_hash)
     client.start()
 
     dt = datetime.datetime.now()
